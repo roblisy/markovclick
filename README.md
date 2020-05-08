@@ -119,7 +119,7 @@ In the graph produced, the nodes representing the individual pages are shown in 
 To sessionise clickstream data, the following code can be used that require a `pandas` DataFrame object.
 
 ```python
-from markovclic.preprocessing import Sessionise
+from markovclick.preprocessing import Sessionise
 sessioniser = Sessionise(df, unique_id_col='cookie_id',
 			 datetime_col='timestamp', session_timeout=30)
 ```
